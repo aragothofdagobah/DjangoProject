@@ -1,0 +1,42 @@
+*{
+    font-family: 'Indie Flower', cursive;
+    color:#282828;
+    font-weight: 300;
+}
+body{
+    background: url("images/Background.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center center;
+}
+.CursiveL{
+    font-family: 'Lobster', cursive;
+}
+
+ul{
+    font-size: 20px;
+}
+
+.Bigger{
+    font-size: 35px
+}
+
+.title-big{
+    font-size: 50px;
+}
+.invisible{
+    color:#FFFFFF;
+}
+.btn-grey{
+    background: #282828;
+}
+.pad-right{
+    padding-right: 150px;
+}
+.pad-left{
+    padding-left: 150px;
+}
+.pad-down{
+    padding-top: 12px;
+}
+

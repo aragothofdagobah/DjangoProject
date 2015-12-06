@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
     <head>
         <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
@@ -9,8 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description" content="Puppies for sale">
         <meta name="keywords" content="puppies, shih tzu, toy poodle, roanoke, virginia, Va, FancyPaws, SouthWest, dogs for sale">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{% static 'puppys/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'puppys/style.css' %}">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Lobster' rel='stylesheet' type='text/css'>
         <link type="text/css" rel="stylesheet" href="js/jquery.qtip.css">
@@ -20,8 +21,8 @@
        <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="index.html">
-                        <img class="img-responsive pad-down" src="images/paw-print-logo.png">
+                    <a href="">
+                        <img class="img-responsive pad-down" src="{% static 'puppys/images/paw-print-logo.png' %}">
                      </a>
             </div>
                 <div class="col-md-6 text-uppercase text-right pull-right CursiveL">
@@ -36,13 +37,13 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <a href="toyPoodle.html" title="Click Here for Available Toy Poodles">
-                        <img class="img-responsive pull-right pad-right" src="images/tpFace.png" alt="toyPoodle">
+                    <a href="ToyPoodle" title="Click Here for Available Toy Poodles">
+                        <img class="img-responsive pull-right pad-right" src="{% static 'puppys/images/tpFace.png' %}" alt="Toy Poodle">
                     </a>
                 </div>
                 <div class = "col-md-6">
-                    <a href="shihTzu.html" title="Click Here for Available Shih Tzus">
-                        <img class="img-responsive pad-left" src="images/szFace.png" alt="Shih Tzu">
+                    <a href="ShihTzu" title="Click Here for Available Shih Tzus">
+                        <img class="img-responsive pad-left" src="{% static 'puppys/images/szFace.png' %}" alt="Shih Tzu">
                     </a>
                 </div>
            </div>
@@ -63,12 +64,12 @@
            </div>
            <div class="row">
               <div class="col-md-6">
-                  <a href="About.html">
+                  <a href="about">
                     <button type="button" class="btn btn-default btn-lg btn-color pull-right">About</button>
                   </a>
               </div>
               <div class="col-md-6">
-                  <a href="Contact.html">
+                  <a href="contact">
                     <button type="button" class="btn btn-default btn-lg btn-color pull-left">Contact</button>
                   </a>
               </div>
