@@ -8,7 +8,7 @@ class ImageUploadForm(forms.Form):
 
 class ToyPoodle(models.Model):
     Name = models.CharField(max_length=70)
-    Description = models.CharField(max_length=500)
+    Description = models.TextField()
     Pic = models.ImageField(upload_to='pic_folder/', default='')
 
     def __str__(self):
@@ -17,7 +17,7 @@ class ToyPoodle(models.Model):
 
 class ShihTzu(models.Model):
     Name = models.CharField(max_length=70)
-    Description = models.CharField(max_length=500)
+    Description = models.TextField()
     Pic = models.ImageField(upload_to='pic_folder/', default='')
 
     def __str__(self):
