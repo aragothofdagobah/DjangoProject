@@ -18,7 +18,7 @@ class ToyPoodle(models.Model):
 class ShihTzu(models.Model):
     Name = models.CharField(max_length=70)
     Description = models.TextField()
-    Pic = models.ImageField(upload_to='..media/pic_folder/', default='')
+    Pic = models.ImageField(upload_to='../media/pic_folder/', default='')
 
     def __str__(self):
         return self.Name

@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.template import loader
+from django.template import RequestContext, loader
+from .models import ToyPoodle, ShihTzu
 
 
 def index(request):
@@ -18,10 +19,18 @@ def about(request):
 
 
 def shihTzu(request):
+    puppy_list = ShihTzu.objects.order_by('-Name')
     template = loader.get_template('puppys/shihTzu.html')
-    return HttpResponse(template.render())
+    context = RequestContext(request, {
+        'puppy_list': puppy_list,
+    })
+    return HttpResponse(template.render(context))
 
 
 def toyPoodle(request):
+    puppy_list = ToyPoodle.objects.order_by('-Name')
     template = loader.get_template('puppys/toyPoodle.html')
-    return HttpResponse(template.render())
+    context = RequestContext(request, {
+        'puppy_list': puppy_list,
+    })
+    return HttpResponse(template.render(context))
